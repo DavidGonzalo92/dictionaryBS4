@@ -23,7 +23,7 @@ words=soup.text.split()
 
 
 
-
+'''
 with open('palabras.txt') as f:
 
     word_downl = f.readlines()
@@ -34,14 +34,14 @@ for a in word_downl:
     a=a.strip()
     litleword.append(a)
 
-
+'''
 
 
 
 
 diccinary={}
 
-for a in litleword:
+for a in words:
 
     h=a.replace(' ','+')
     browser=driver.get('https://www.collinsdictionary.com/dictionary/english/'+h)
